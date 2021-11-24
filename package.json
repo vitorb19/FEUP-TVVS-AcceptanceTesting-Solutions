@@ -1,0 +1,26 @@
+{
+  "name": "tvvs-acceptance-testing",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "cucumber-js test",
+    "cypress:open": "cypress open",
+    "cy:run:chrome": "cypress run --browser chrome",
+    "cy:run:firefox": "cypress run --browser firefox"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@cucumber/cucumber": "^8.0.0-rc.1",
+    "cypress": "^9.0.0",
+    "cypress-cucumber-preprocessor": "^4.3.0"
+  },
+  "cypress-cucumber-preprocessor": {
+    "step_definitions": "cypress/integration/step_definitions"
+  },
+  "keywords": [
+    "cypress",
+    "cucumber"
+  ]
+}
